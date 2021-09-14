@@ -228,6 +228,12 @@ h6 {
   -webkit-text-stroke-color: tomato !important;
 }
 
+.instagram {
+  color: rgb(255, 110, 134) !important;
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: rgb(255, 110, 134) !important;
+}
+
 .navigation__section {
   width: 100vw;
   height: max-content;
@@ -545,6 +551,7 @@ h6 {
   box-sizing: border-box;
 }
 
+
 .upcoming__events__container .card-header {
   width: 100%;
   box-sizing: border-box;
@@ -588,6 +595,14 @@ h6 {
   justify-content: space-between;
   align-items: center;
   gap: 0.4rem;
+  transition: all 250ms;
+  color: #000;
+}
+
+.event__name:hover {
+  transform: scale(1.1);
+  transition: all 250ms;
+  color: #000;
 }
 
 .event__name h5 {
@@ -662,6 +677,32 @@ h6 {
   overflow-y: auto;
   box-sizing: border-box;
 }
+
+.scoial__home__container .card-body {
+  height: max-content !important;
+  overflow: hidden !important;
+  padding: 0;
+}
+
+
+.scoial__home__container .card-body svg {
+  color: dodgerblue;
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: dodgerblue !important;
+}
+
+.scoial__home__container .card-body .fa-youtube {
+  color: rgb(245, 37, 0);
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: rgb(245, 37, 0) !important;
+}
+
+.scoial__home__container .card-body .fa-instagram {
+  color: rgb(255, 110, 134);
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: rgb(255, 110, 134) !important;
+}
+
 
 /* Connect Images  */
 
@@ -768,7 +809,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
   box-sizing: border-box;
 }
 
@@ -776,9 +817,48 @@ h6 {
   width: 22%;
   height: max-content;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.footer__column__three {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: ce;
+  gap: 1rem;
+}
+
+.footer__column__three h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.footer__column__three .fab{
+  color: var(--white-color) !important;
+}
+
+.footer__column__four h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: var(--white-color);
+}
+
+.footer__column__four p {
+  font-size: .8rem;
+  font-family: var(--font-family);
+  color: var(--white-color);
 }
 
 .copy__right__section {
@@ -805,7 +885,6 @@ h6 {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  margin-right: 10rem;
 }
 
 .copy__right__container p {
