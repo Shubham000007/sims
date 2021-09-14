@@ -9,18 +9,18 @@
 //   });
 // }
 
-
 $(document).ready(function () {
+  // Admission notice Table
 
-    // Admission notice Table
+  $("#admission__notice__table").DataTable({
+    scrollX: true,
+  });
 
-    $("#admission__notice__table").DataTable();
+  //Result Table
 
-    //Result Table
+  $("#result__notice__table").DataTable({
+    scrollX: true,
+  });
 
-    $('#result__notice__table').DataTable();
-
-
-
-    // document ready Ends 
+  // document ready Ends
 });

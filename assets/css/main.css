@@ -130,20 +130,19 @@ h6 {
   }
 }
 
-
 /* Table css  */
 .table {
-  width: 100%;
+  width: 100% !important;
   border: 1px solid var(--border-color);
 }
 
 .table th,
 .table td {
   max-width: 300px;
+  min-width: 150px;
   border: 1px solid var(--border-color);
   text-align: center;
 }
-
 
 .table thead tr {
   background: var(--text-color);
@@ -152,7 +151,6 @@ h6 {
 .table thead tr th {
   color: var(--white-color);
 }
-
 
 .dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_filter,
@@ -289,7 +287,7 @@ h6 {
   margin-top: 1rem;
 }
 
-.drop__down__menu:hover>.dropdown__container {
+.drop__down__menu:hover > .dropdown__container {
   display: block;
 }
 
@@ -339,15 +337,30 @@ h6 {
 .banner__section img {
   object-fit: cover;
   width: auto;
-  height: 400px;
+  height: 500px;
   display: block;
 }
 
-.carousel-control-next-icon {
-  padding: 1rem;
-  background-image: var(--primary-color);
+.carousel-control-next svg,
+.carousel-control-prev svg {
+  width: 50px !important;
+  height: 50px !important;
+  color: #fff;
+  background: var(--text-color);
   border-radius: 100%;
-  color: #000;
+}
+
+.carousel-control-next {
+  justify-content: flex-end !important;
+  padding: 1rem !important;
+}
+.carousel-control-prev {
+  justify-content: flex-start !important;
+  padding: 1rem !important;
+}
+
+.carousel-indicators [data-bs-target]{
+  background-color:#fff;
 }
 
 /* Banner css Ends */
@@ -551,7 +564,6 @@ h6 {
   box-sizing: border-box;
 }
 
-
 .upcoming__events__container .card-header {
   width: 100%;
   box-sizing: border-box;
@@ -684,7 +696,6 @@ h6 {
   padding: 0;
 }
 
-
 .scoial__home__container .card-body svg {
   color: dodgerblue;
   -webkit-text-stroke-width: 1px !important;
@@ -702,7 +713,6 @@ h6 {
   -webkit-text-stroke-width: 1px !important;
   -webkit-text-stroke-color: rgb(255, 110, 134) !important;
 }
-
 
 /* Connect Images  */
 
@@ -844,7 +854,7 @@ h6 {
   text-align: center;
 }
 
-.footer__column__three .fab{
+.footer__column__three .fab {
   color: var(--white-color) !important;
 }
 
@@ -856,9 +866,14 @@ h6 {
 }
 
 .footer__column__four p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-family: var(--font-family);
   color: var(--white-color);
+}
+
+.social__links:hover {
+  transform: scale(1.1);
+  transition: all 250ms;
 }
 
 .copy__right__section {
@@ -1000,7 +1015,6 @@ h6 {
   font-family: var(--font-family);
 }
 
-
 .about__content p span {
   font-size: 1rem;
   font-weight: bold;
@@ -1011,7 +1025,7 @@ h6 {
 .about__content p span::before {
   content: "";
   border-left: 1px solid orange;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   position: relative;
   bottom: 0;
 }
@@ -1250,7 +1264,7 @@ h6 {
 #contact__form__button {
   width: max-content;
   height: max-content;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   background: var(--button-color);
   color: var(--white-color);
   font-size: 1rem;
@@ -1272,13 +1286,12 @@ h6 {
 
 .location__on__map iframe {
   border-radius: 10px;
-  box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37);
+  /* box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); */
 }
 
 /* Contact Us End */
-
 
 /* Admission notice Section  */
 
@@ -1311,13 +1324,10 @@ h6 {
   width: 10%;
   position: relative;
   bottom: -6px;
-  margin: .2rem auto;
+  margin: 0.2rem auto;
 }
 
-
 /* Admission notice Section Ends */
-
-
 
 /* Result  Section  */
 
@@ -1350,8 +1360,7 @@ h6 {
   width: 5%;
   position: relative;
   bottom: -6px;
-  margin: .2rem auto;
+  margin: 0.2rem auto;
 }
-
 
 /* Result  Section  Ends*/
