@@ -551,6 +551,9 @@ select {
 .notification-date {
   width: 100%;
   border-bottom: 1px dashed var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .notification-date p {
