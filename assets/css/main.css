@@ -163,6 +163,17 @@ h6 {
 
 /* Table css  Ends */
 
+/* basic form Setups  */
+
+input,
+textarea,
+select {
+  background: #fff !important;
+  outline: none;
+}
+
+/* basic form Setups Ends */
+
 /* Navigation css  */
 
 .header__section {
@@ -359,8 +370,8 @@ h6 {
   padding: 1rem !important;
 }
 
-.carousel-indicators [data-bs-target]{
-  background-color:#fff;
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
 }
 
 /* Banner css Ends */
